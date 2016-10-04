@@ -1,0 +1,89 @@
+@hovertextcolor: rgba(255,255,255,0.5);
+
+body {
+	display: block;
+	margin: 0 auto;
+	width: 1284px;
+
+	header {
+		padding: 10px;
+		background-color: red;
+		text-align: center;
+		background-color: #F25F55;
+
+		a {
+			font-family: "Avenir Next";
+			font-size: 20px;
+			padding-left: 50px;
+			padding-right: 50px;
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			color: @hovertextcolor;
+		}
+	}
+
+	.Main {
+		width: 100%;
+		height: 100%;
+		position: relative;
+
+		.Body {
+			width: 80%;
+			height: 100%;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+
+			.text {
+				font-family: "Avenir Next";
+				font-size: 16px;
+				padding: 20px;
+			}
+			img {
+				width: 50%;
+				heigth: auto;
+				border-radius: 10px;
+			}
+		}
+
+		.RightMenu {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			width: 20%;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			background-color: #69DBD3;
+
+			.rightmenu {
+				display: block;
+				color: white;
+				text-decoration: none;
+				padding: 20px;
+				font-family: "Avenir Next";
+				font-size: 28px;
+			}
+			.rightmenu:hover {
+				color: @hovertextcolor;
+			}
+		}
+	}
+
+	footer {
+		padding: 10px;
+		background-color: red;
+		text-align: center;
+		background-color: #F25F55;
+
+		p {
+			font-family: "Avenir Next";
+			font-size: 16px;
+			color: @hovertextcolor;
+			text-decoration: underline;
+		}
+	}
+}
